@@ -1,0 +1,26 @@
+services:
+  app:
+    image: weatherapp-frontend-dev
+    volumes:
+        - ./weatherapp_frontend/:/usr/src/app
+    container_name: weatherapp-frontend-dev
+
+  server:
+    image: weatherapp-backend-dev
+    volumes:
+      - ./weatherapp_backend/:/usr/src/app
+    environment: 
+      MONGODB_URI: ${MONGODB_URI}
+      WEATHER_API_KEY: ${WEATHER_API_KEY}
+    container_name: weatherapp-backend-dev
+
+  nginx:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:80
+    container_name: reverse-proxy
+    depends_on:
+      - app
+      - server

@@ -1,0 +1,80 @@
+.App {
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+.App-header {
+  background-color: #abceeb;
+  border: 3px round rgb(235, 235, 235);
+  border-radius: 5px;
+  margin: auto;
+  height: 110px;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: calc(18px + 2vmin);
+  color: rgb(255, 255, 255);
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.Find-city {
+  background-color: #ffffff;
+  margin: auto;
+  width: 334px;
+  padding: 10px;
+  font-size: calc(2px + 2vmin);
+  margin-bottom: 1px;
+}
+
+.Notification {
+  background: #f3f3f3;
+  margin: auto;
+  height: 20px;
+}
+
+.Weather-display {
+  background-color: #ffffff;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  margin: auto;
+  width: 485px;
+  height: 560px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(6px + 2vmin);
+  margin-bottom: 1px;
+}
+
+.Weather-History-header {
+  background: #f3f3f3;
+  margin: auto;
+  height: 20px;
+  font-size: calc(1px + 2vmin);
+  margin-bottom: 4px;
+}
+
+.Weather-History-display {
+  background-color: #ffffff;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  margin: auto;
+  width: 320px;
+  height: 115px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  font-size: calc(2px + 2vmin);
+}
+
+.Buffer {
+  width: 100%;
+  height: 50px;
+  background: #f3f3f3;
+}
